@@ -176,10 +176,8 @@ energie-renouvelable-ia/
 | Nom | Rôle |
 |-----|------|
 | **Mohamed-Amine CHHAIB** | Développement full-stack, modèle IA, dimensionnement |
-| **Walid EL ALAOUI** | Conception système, tests |
-| **Asmae AIT SIDI** | Documentation, validation données |
 
-**Encadrant :** Pr. EL HATTAB Mohamed  
+**Encadrant :** Pr. Nour-Eddine AIT ABDELLAH  
 **Établissement :** École Supérieure de Technologie — Guelmim  
 **Filière :** DUT Énergies Renouvelables et Efficacité Énergétique (EREE)
 
