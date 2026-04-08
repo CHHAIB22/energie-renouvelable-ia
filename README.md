@@ -141,6 +141,59 @@ pip install scikit-learn numpy
 ```
 
 ---
+## Prerequis
+
+- **Node.js** v18+ — https://nodejs.org
+- **Python 3.8+** — https://python.org
+- **pip** packages : `pip install scikit-learn numpy`
+
+---
+
+## Installation et Lancement
+
+```bash
+# 1. Installer les dependances Node
+npm install
+
+# 2. Lancer en mode developpement
+npm run dev
+```
+
+## Build Production (executable)
+
+```bash
+# Generer l'executable Windows/Mac/Linux
+npm run build
+# Resultat dans le dossier dist/
+```
+
+---
+
+## Fonctionnalites
+
+| Vue          | Description |
+|---|---|
+| **Analyse**  | Formulaire interactif avec sliders + pills. Lance la prediction Python via IPC Electron. Affiche radar, barres de probabilite, chemin de decision. |
+| **Historique** | Tableau de toutes les predictions lues depuis SQLite. |
+| **Energies** | Guide de reference sur les 4 sources d'energie. |
+
+---
+
+## Technologies
+
+- **Electron 28** — fenetre desktop native, IPC
+- **React 18** — interface utilisateur
+- **Recharts** — RadarChart, BarChart
+- **scikit-learn** — DecisionTreeClassifier
+- **SQLite** — stockage des donnees et predictions
+- **CSS Variables** — systeme de design tokens
+
+---
+
+## Personnalisation
+
+Pour ajouter des donnees d'entrainement : editez `python/donnees_energie.sql`
+puis supprimez `energie_renouvelable.db` pour forcer la recreation.
 
 ## 📁 Structure du Projet
 
@@ -195,56 +248,4 @@ Ce projet est développé dans le cadre d'un Projet de Fin d'Études académique
 </div>
 
 
-## Prerequis
 
-- **Node.js** v18+ — https://nodejs.org
-- **Python 3.8+** — https://python.org
-- **pip** packages : `pip install scikit-learn numpy`
-
----
-
-## Installation et Lancement
-
-```bash
-# 1. Installer les dependances Node
-npm install
-
-# 2. Lancer en mode developpement
-npm run dev
-```
-
-## Build Production (executable)
-
-```bash
-# Generer l'executable Windows/Mac/Linux
-npm run build
-# Resultat dans le dossier dist/
-```
-
----
-
-## Fonctionnalites
-
-| Vue          | Description |
-|---|---|
-| **Analyse**  | Formulaire interactif avec sliders + pills. Lance la prediction Python via IPC Electron. Affiche radar, barres de probabilite, chemin de decision. |
-| **Historique** | Tableau de toutes les predictions lues depuis SQLite. |
-| **Energies** | Guide de reference sur les 4 sources d'energie. |
-
----
-
-## Technologies
-
-- **Electron 28** — fenetre desktop native, IPC
-- **React 18** — interface utilisateur
-- **Recharts** — RadarChart, BarChart
-- **scikit-learn** — DecisionTreeClassifier
-- **SQLite** — stockage des donnees et predictions
-- **CSS Variables** — systeme de design tokens
-
----
-
-## Personnalisation
-
-Pour ajouter des donnees d'entrainement : editez `python/donnees_energie.sql`
-puis supprimez `energie_renouvelable.db` pour forcer la recreation.
